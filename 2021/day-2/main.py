@@ -7,6 +7,7 @@ def get_data():
         return [line.strip() for line in f.readlines()]
 
 def calculate_position(movements):
+    "Calculates position using only horizontal and depth variables"
     horizontal = 0
     depth = 0
     for move in movements:
@@ -20,6 +21,7 @@ def calculate_position(movements):
 
 
 def calculate_position_2(movements):
+    '''Calculates the position using aim'''
     horizontal = 0
     aim = 0
     depth = 0
