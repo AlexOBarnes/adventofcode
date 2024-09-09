@@ -14,6 +14,7 @@ def count_floors(moves:str) -> int:
     return count['(']-count[')']
 
 def first_basement(moves:str) -> int:
+    '''Returns the first index that sends santa into the basement'''
     counter = 0
     index = 0
     for parens in moves:
